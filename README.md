@@ -18,16 +18,16 @@ By keeping lightweight ONNX models (25–80 MB) warm in RAM inside a dedicated b
 
 ## Features
 
-- ⚡ **Near-Instant Speech Synthesis:** Communicates with a local background HTTP service over `http://127.0.0.1:8100`, skipping cold-start disk reads on every response.
-- 💻 **Strictly CPU-Only:** Zero GPU or VRAM usage—keeps your GPU 100% free for large language models, vision, and local inference.
-- 🎙️ **8 English Voices:** Seamlessly switch between **Kiki**, **Bella**, **Rosie**, **Luna**, **Jasper**, **Bruno**, **Hugo**, and **Leo**.
-- 📦 **Multi-Model Support:** Full dynamic support for:
+- **Near-Instant Speech Synthesis:** Communicates with a local background HTTP service over `http://127.0.0.1:8100`, skipping cold-start disk reads on every response.
+- **Strictly CPU-Only:** Zero GPU or VRAM usage—keeps your GPU 100% free for large language models, vision, and local inference.
+- **8 English Voices:** Seamlessly switch between **Kiki**, **Bella**, **Rosie**, **Luna**, **Jasper**, **Bruno**, **Hugo**, and **Leo**.
+- **Multi-Model Support:** Full dynamic support for:
   - `KittenML/kitten-tts-mini-0.8` (80 MB — **Best quality CPU**, default)
   - `KittenML/kitten-tts-micro-0.8` (41 MB — Balanced speed & quality)
   - `KittenML/kitten-tts-nano-0.8` (56 MB — Fast fp32 model)
   - `KittenML/kitten-tts-nano-0.8-int8` (25 MB — Ultra-compact int8 model)
-- 🔌 **Official Plugin Architecture:** Lives entirely in user plugin space (`~/.hermes/plugins/` or `E:\Hermes\plugins\`), touching zero core Hermes application code.
-- 🌐 **System-Wide Compatibility:** The underlying Anaconda service also exposes standard OpenAI `/v1/audio/speech` and `/v1/voices` endpoints for any other application on your machine.
+- **Official Plugin Architecture:** Lives entirely in user plugin space (`~/.hermes/plugins/` or `E:\Hermes\plugins\`), touching zero core Hermes application code.
+- **System-Wide Compatibility:** The underlying Anaconda service also exposes standard OpenAI `/v1/audio/speech` and `/v1/voices` endpoints for any other application on your machine.
 
 ---
 
@@ -39,10 +39,10 @@ Clone or drop this plugin repository into your Hermes plugins directory:
 
 ```bash
 # Windows
-git clone https://github.com/ClinicalSuppression/KittenTTS-Hermes-Plugin.git E:/Hermes/plugins/kittentts-service
+git clone https://github.com/ClinicalSuppression/kittentts-hermes-plugin.git E:/Hermes/plugins/kittentts-service
 
 # Linux / macOS
-git clone https://github.com/ClinicalSuppression/KittenTTS-Hermes-Plugin.git ~/.hermes/plugins/kittentts-service
+git clone https://github.com/ClinicalSuppression/kittentts-hermes-plugin.git ~/.hermes/plugins/kittentts-service
 ```
 
 ### 2. Configure Hermes

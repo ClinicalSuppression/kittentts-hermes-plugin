@@ -3,7 +3,7 @@ version: 0.1.1
 description: "Production-grade KittenTTS local CPU service plugin for Hermes Agent and Hermes Desktop"
 author: "ClinicalSuppression"
 license: "MIT"
-repository: "https://github.com/ClinicalSuppression/KittenTTS-Hermes-Plugin"
+repository: "https://github.com/ClinicalSuppression/kittentts-hermes-plugin"
 
 settings:
   base_url:
